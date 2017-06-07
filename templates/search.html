@@ -1,0 +1,9 @@
+<!doctype html>
+<title>{{ title }}</title>
+<div>
+    {% for r in results %}
+    <div style="display: inline-block; width: 33%;">
+        <img style="width: 100%;" src="{{ r.images['fixed_height'].url }}">
+    </div>
+    {% endfor %}
+</div>
