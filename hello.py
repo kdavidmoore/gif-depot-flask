@@ -20,5 +20,5 @@ def search(query=None):
     params.update({ 'api_key': 'dc6zaTOxFJmzC' })
     r = requests.get('http://api.giphy.com/v1/gifs/search', params=params)
     json = r.json()
-    return render_template('search.html', results=json['data'])
+    return render_template('search.html', title=query, results=json['data'])
 
